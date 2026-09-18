@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int age;
+    int income;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    printf("Enter your monthly income ($): ");
+    scanf("%d", &income);
+    if (age >= 21) {   
+       if (income >= 30000) {
+            printf("Congratulations! You are eligible for the loan.\n");
+        } else {
+            printf("Application Denied: Income must be at least $30,000.\n");
+        }
+    } else {
+        printf("Application Denied: You must be at least 21 years old.\n");
+    }
+    return 0;
+}
