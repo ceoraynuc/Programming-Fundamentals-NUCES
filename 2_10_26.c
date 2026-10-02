@@ -47,3 +47,16 @@ int main() {
     return 0;
 }
 
+
+
+#include <stdio.h>
+
+int main() {
+    int prices[5]={100,200,300,400,500};
+    int i;
+    for( i =0;i <5;i++){
+    	printf("%d :index \n %d :prices \n",i,prices[i]);
+	}
+    return 0;
+}
+
