@@ -36,3 +36,14 @@ int main() {
     return 0;
 }
 
+
+
+#include <stdio.h>
+
+int main() {
+    int prices[5]={100,200,300,400,500};
+    prices[3]=1000;
+    printf("%d",prices[2]);
+    return 0;
+}
+
