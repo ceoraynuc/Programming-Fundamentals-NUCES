@@ -60,3 +60,13 @@ int main() {
     return 0;
 }
 
+#include <stdio.h>
+
+int main() {
+    char prices[5]={'a','e','i','o','u'};
+    int i;
+    for( i =0;i <5;i++){
+    	printf("%d :index \n %c :prices \n",i,prices[i]);
+	}
+    return 0;
+}
