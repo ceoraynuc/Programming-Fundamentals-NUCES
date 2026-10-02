@@ -17,3 +17,22 @@ int main()
 
 }
 
+
+
+
+#include <stdio.h>
+
+int main() {
+    int number = 1,sum=0;
+
+    while (number != 0) { 
+        printf("Enter a number: "); 
+        scanf("%d", &number); 
+        sum = sum+number;
+        printf("\n%d\n",sum);
+    } 
+
+    printf("Zero entered.\n"); 
+    return 0;
+}
+
