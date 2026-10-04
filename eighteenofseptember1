@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main() {
+    int department; 
+    int role;      
+
+    printf("Select Department (1 for Tech, 2 for HR): ");
+    scanf("%d", &department);
+
+    printf("Select Role (1 for Manager, 2 for Staff): ");
+    scanf("%d", &role);
+
+    printf("\n--- Result ---\n");
+
+    switch (department) {
+        case 1:
+            printf("Department: Tech\n");
+            switch (role) {
+                case 1:
+                    printf("Role: Tech Manager\n");
+                    break;
+                case 2:
+                    printf("Role: Software Developer\n");
+                    break;
+                default:
+                    printf("Role: Unknown Tech Role\n");
+                    break;
+            }
+            break; 
+            
+        case 2:
+            printf("Department: HR\n");
+            switch (role) {
+                case 1:
+                    printf("Role: HR Manager\n");
+                    break;
+                case 2:
+                    printf("Role: Recruiter\n");
+                    break;
+                default:
+                    printf("Role: Unknown HR Role\n");
+                    break;    
+            }
+            break;
+            
+        default:
+            printf("Invalid Department\n");
+            break;
+    }
+
+    return 0;
+}

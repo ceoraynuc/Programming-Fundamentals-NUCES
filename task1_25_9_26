@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() { 
+    int mid1, mid2, final, tasks; 
+    
+    printf("enter your marks of mid1: "); 
+    scanf("%d", &mid1); 
+    printf("enter your marks of mid2: "); 
+    scanf("%d", &mid2); 
+    printf("enter your marks of final: "); 
+    scanf("%d", &final); 
+    printf("have you done your all tasks or not for yes type 1 for no type 0: "); 
+    scanf("%d", &tasks); 
+    
+    if(mid1 >= 50 && mid2 >= 50 && final >= 50 && tasks == 1){ 
+        printf("you are qualified for next semester\n"); 
+    } 
+   
+    else if(mid1 < 50 || mid2 < 50 || final < 50 || tasks != 1){ 
+        printf("you are not qualified for next semester\n"); 
+    } 
+    else{ 
+        printf("invalid\n"); 
+    } 
+    
+    return 0; 
+}

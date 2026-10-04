@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+    printf("Enter a number (1-4) to select a department:\n");
+    printf("1. Computer Science\n");
+    printf("2. Information Technology\n");
+    printf("3. Software Engineering\n");
+    printf("4. Artificial Intelligence\n");
+    printf("Your choice: ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1:
+            printf("Computer Science\n");
+            break;
+        case 2:
+            printf("Information Technology\n");
+            break;
+        case 3:
+            printf("Software Engineering\n");
+            break;
+        case 4:
+            printf("Artificial Intelligence\n");
+            break;
+        default:
+            printf("Invalid Choice\n");
+            break;
+    }
+
+    return 0;
+}
